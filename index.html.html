@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Content Strategist | Portfolio 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6', // 科技蓝
+                        secondary: '#10B981', // 增长绿
+                        dark: '#0F172A',
+                        card: '#1E293B',
+                        gold: '#F59E0B', // 转化金
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 自定义滚动条 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F172A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #60A5FA, #34D399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-dark text-gray-100 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- 导航栏 -->
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold tracking-wider">PORTFOLIO<span class="text-primary">.2025</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">首页</a>
+                        <a href="#cases" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">核心案例</a>
+                        <a href="#strategy" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">生态洞察</a>
+                        <a href="#resume" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">关于我</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="flex-1 text-center md:text-left">
+            <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-primary uppercase bg-blue-900/30 rounded-full border border-blue-800">
+                Open to Work · Shenzhen
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                海外社媒运营<br>
+                <span class="gradient-text">作品集</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
+                我是 <span class="text-white font-semibold">白璐瑶</span>，求职意向海外社媒增长运营。
+                我擅长利用 <span class="text-secondary">AI 工作流</span> 提升内容效率，
+                并致力于将流量转化为实实在在的 <span class="text-secondary">GMV</span>。
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center md:justify-start items-center mt-8">
+                <a href="#cases" class="px-8 py-3 bg-primary hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg shadow-blue-500/30 transition-all transform hover:-translate-y-1 whitespace-nowrap">
+                    查看实战案例
+                </a>
+                
+                <div class="flex flex-col gap-2 text-gray-300 text-sm border-l border-gray-700 pl-6 border-opacity-50">
+                    <div class="flex items-center gap-3 hover:text-white transition-colors group cursor-pointer">
+                        <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                            <i class="fas fa-envelope text-primary text-xs"></i>
+                        </div>
+                        <span class="font-medium tracking-wide">2645520659@qq.com</span>
+                    </div>
+                    <div class="flex items-center gap-3 hover:text-white transition-colors group cursor-pointer">
+                        <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
+                            <i class="fas fa-phone text-secondary text-xs"></i>
+                        </div>
+                        <!-- 请记得手动修改这里的电话号码 -->
+                        <span class="font-medium tracking-wide">+86 159 2359 0272</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 核心数据概览 -->
+            <div class="mt-12 grid grid-cols-3 gap-4 border-t border-gray-800 pt-8">
+                <div>
+                    <div class="text-3xl font-bold text-white">48%</div>
+                    <div class="text-sm text-gray-500">最高营收增长</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-white">13w+</div>
+                    <div class="text-sm text-gray-500">单系列浏览量</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-white">60%</div>
+                    <div class="text-sm text-gray-500">AI提效幅度</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 头像/形象展示区 -->
+        <div class="flex-1 flex justify-center relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <div class="relative w-64 h-64 md:w-80 md:h-80 bg-gray-800 rounded-2xl overflow-hidden shadow-2xl border border-gray-700 flex items-center justify-center">
+                <img src="me.jpg" alt="我的照片" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="cases" class="py-20 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">核心实战案例</h2>
+                <p class="text-gray-400">不仅仅是"做过"，而是"做到"。以结果为导向的增长方法论。</p>
+            </div>
+
+            <!-- Case 1: 民宿 (双图模式 - 右侧自动滚动) -->
+            <div class="mb-20 bg-card rounded-2xl p-6 md:p-10 border border-gray-800 hover:border-gray-700 transition-all shadow-xl">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    
+                    <div class="w-full md:w-1/2 flex gap-3 relative">
+                        <!-- 图1: 笔记封面 -->
+                        <div class="w-1/2 aspect-[9/16] bg-gray-800 rounded-lg overflow-hidden relative group">
+                            <img src="case1.jpg" alt="笔记封面" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 pt-8">
+                                <span class="text-[10px] text-gray-300 uppercase tracking-wider">Front-end</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 图2: 后台数据 (长图滑动模式) -->
+                        <div class="w-1/2 aspect-[9/16] bg-gray-800 rounded-lg overflow-hidden relative group border border-gray-700/50">
+                            <!-- object-top hover:object-bottom 实现滚动 -->
+                            <img src="case1_b.jpg" alt="后台数据长图" class="w-full h-full object-cover object-top hover:object-bottom transition-all duration-[5000ms] ease-in-out bg-gray-700 cursor-s-resize">
+                            
+                            <!-- 提示图标 -->
+                            <div class="absolute bottom-2 right-2 text-gray-400/50 text-[10px] animate-bounce pointer-events-none">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent p-3 pt-8 pointer-events-none">
+                                <span class="text-[10px] text-gray-300 uppercase tracking-wider">Back-end Data</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-3 -left-3 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10">
+                            营收增长 +48%
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-white mb-2">本地化叙事：从内容种草到私域核销</h3>
+                        <div class="space-y-6 mt-6">
+                            <div class="relative pl-6 border-l-2 border-red-500/50">
+                                <h4 class="text-sm font-semibold text-gray-300 uppercase mb-1">痛点 (Pain Point)</h4>
+                                <p class="text-gray-400 text-sm">民宿过度依赖OTA平台，佣金高，无法发挥民宿优势。</p>
+                            </div>
+                            <div class="relative pl-6 border-l-2 border-primary/50">
+                                <h4 class="text-sm font-semibold text-gray-300 uppercase mb-1">策略 (Strategy)</h4>
+                                <p class="text-gray-400 text-sm">策划“来厦门住我家”系列，主打“本地人视角+人情味”。</p>
+                            </div>
+                            <div class="relative pl-6 border-l-2 border-secondary/50">
+                                <h4 class="text-sm font-semibold text-gray-300 uppercase mb-1">结果 (Result)</h4>
+                                <p class="text-gray-400 text-sm">季度浏览量 1.7w+，引流私域数百人，营业额增长 48%。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 2: 电商 (三视频系列展示模式) -->
+            <div class="mb-20 bg-card rounded-2xl p-6 md:p-10 border border-gray-800 hover:border-gray-700 transition-all shadow-xl">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold text-white mb-2">场景化视觉矩阵：流量与转化的分层打法</h3>
+                    <p class="text-gray-400 text-sm">针对不同受众偏好，构建多维内容矩阵 (Content Matrix)</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <!-- 1. Master Series (流量) -->
+                    <div class="group">
+                        <div class="aspect-[9/16] bg-gray-800 rounded-xl overflow-hidden relative mb-4 border border-gray-700 group-hover:border-primary/50 transition-colors">
+                            <video class="w-full h-full object-cover" controls>
+                                <source src="case2_master.mp4" type="video/mp4">
+                            </video>
+                            <div class="absolute top-2 left-2 bg-blue-600/90 text-white text-[10px] px-2 py-0.5 rounded shadow-sm">
+                                流量担当
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">Master Series</h4>
+                        <p class="text-xs text-gray-400 mb-1">有意思的“玄学”场景</p>
+                        <div class="flex items-center gap-2 text-xs text-primary font-semibold">
+                            <i class="fas fa-eye"></i> 7w+ Views (Avg 5k)
+                        </div>
+                    </div>
+
+                    <!-- 2. Washing Fruit (爆款) -->
+                    <div class="group">
+                        <div class="aspect-[9/16] bg-gray-800 rounded-xl overflow-hidden relative mb-4 border border-gray-700 group-hover:border-secondary/50 transition-colors">
+                            <video class="w-full h-full object-cover" controls>
+                                <source src="case2_fruit.mp4" type="video/mp4">
+                            </video>
+                            <div class="absolute top-2 left-2 bg-green-600/90 text-white text-[10px] px-2 py-0.5 rounded shadow-sm">
+                                爆款系列
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">Washing Fruit</h4>
+                        <p class="text-xs text-gray-400 mb-1">幻想向</p>
+                        <div class="flex items-center gap-2 text-xs text-secondary font-semibold">
+                            <i class="fas fa-fire"></i> 5w+ Views (Avg 1w)
+                        </div>
+                    </div>
+
+                    <!-- 3. 风水系列 (转化) -->
+                    <div class="group relative">
+                        <!-- 金色光晕特效 -->
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                        <div class="relative h-full bg-card rounded-xl p-0">
+                            <div class="aspect-[9/16] bg-gray-800 rounded-xl overflow-hidden relative mb-4 border border-gold/30 group-hover:border-gold transition-colors">
+                                <video class="w-full h-full object-cover" controls>
+                                    <source src="case2_fengshui.mp4" type="video/mp4">
+                                </video>
+                                <div class="absolute top-2 left-2 bg-gold text-black text-[10px] font-bold px-2 py-0.5 rounded shadow-sm">
+                                    <i class="fas fa-crown mr-1"></i>高转化
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Feng Shui Series</h4>
+                            <p class="text-xs text-gray-400 mb-1">精准人群痛点</p>
+                            <div class="flex items-center gap-2 text-xs text-gold font-bold">
+                                <i class="fas fa-shopping-cart"></i> 互动转化率 8% 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+             <!-- Case 3: AI Workflow (双成片模式：故事 vs TVC) -->
+             <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 md:p-10 border border-gray-700 shadow-xl relative overflow-hidden">
+                <div class="relative z-10 text-center mb-10">
+                    <span class="text-primary font-bold tracking-wider text-sm uppercase">AI-Powered Production</span>
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mt-2">AI 赋能的多风格内容驾驭</h3>
+                    <p class="text-gray-400 mt-2">同一套 AI 工作流，产出截然不同的商业级成片</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- 视频1: 故事向 -->
+                    <div class="bg-dark/50 p-6 rounded-xl border border-gray-700 backdrop-blur-sm group hover:border-purple-500/50 transition-colors">
+                        <div class="aspect-video mb-4 rounded-lg overflow-hidden bg-gray-800 relative">
+                             <video class="w-full h-full object-cover" controls>
+                                <source src="ai_story.mp4" type="video/mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                            <div class="absolute top-2 left-2 bg-purple-600/90 text-white text-xs px-2 py-1 rounded-md shadow-sm">
+                                <i class="fas fa-book-open mr-1"></i> Storytelling
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Narrative Short: 情感叙事</h4>
+                        <p class="text-xs text-gray-400">侧重沉浸式体验与情感共鸣。利用 Midjourney 生成情绪板 (Moodboard)，AI 辅助撰写分镜，打造电影感叙事节奏。</p>
+                    </div>
+
+                    <!-- 视频2: TVC广告 -->
+                    <div class="bg-dark/50 p-6 rounded-xl border border-gray-700 backdrop-blur-sm group hover:border-blue-500/50 transition-colors">
+                        <div class="aspect-video mb-4 rounded-lg overflow-hidden bg-gray-800 relative">
+                             <video class="w-full h-full object-cover" controls>
+                                <source src="ai_tvc.mp4" type="video/mp4">
+                                您的浏览器不支持视频标签。
+                            </video>
+                            <div class="absolute top-2 left-2 bg-blue-600/90 text-white text-xs px-2 py-1 rounded-md shadow-sm">
+                                <i class="fas fa-ad mr-1"></i> Commercial TVC
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-white mb-2">Product TVC: 商业广告</h4>
+                        <p class="text-xs text-gray-400">侧重产品卖点与视觉冲击。利用 AI 快速生成高质感空镜素材，配合快节奏剪辑与动效，强化品牌记忆点。</p>
+                    </div>
+                </div>
+                
+                <!-- 底部效率标签 -->
+                <div class="mt-8 text-center">
+                    <div class="inline-block bg-gray-800/50 rounded-full px-6 py-2 border border-gray-600 backdrop-blur-md">
+                        <span class="text-gray-300 text-sm">
+                            <i class="fas fa-bolt text-yellow-400 mr-2"></i>
+                            Production Efficiency: <span class="text-white font-bold">1 Person = 1 Team</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Strategic Outlook Section -->
+    <section id="strategy" class="py-20 bg-dark">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">海外社媒生态洞察 & 适配性</h2>
+                <p class="text-gray-400">不仅仅制造内容，更要理解平台的商业底层逻辑</p>
+            </div>
+
+            <!-- Part 1: Platform Insights -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                
+                <!-- TikTok -->
+                <div class="bg-card p-6 rounded-xl border border-gray-800 hover:border-gray-600 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fab fa-tiktok text-2xl text-white"></i>
+                        <h4 class="font-bold text-white">TikTok</h4>
+                    </div>
+                    <div class="text-xs text-gray-500 mb-2 uppercase tracking-wider">核心逻辑: 兴趣电商 + 病毒传播</div>
+                    <p class="text-sm text-gray-400">
+                        目前的盈利核心在于 <span class="text-secondary">TikTok Shop</span> 闭环与直播带货。算法偏好高完播率与强互动。
+                        <br><br>
+                        <span class="text-primary font-semibold">我的打法：</span>利用前3秒黄金Hook锁住流量，结合购物车短视频直接转化。
+                    </p>
+                </div>
+
+                <!-- YouTube -->
+                <div class="bg-card p-6 rounded-xl border border-gray-800 hover:border-gray-600 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fab fa-youtube text-2xl text-red-500"></i>
+                        <h4 class="font-bold text-white">YouTube / Shorts</h4>
+                    </div>
+                    <div class="text-xs text-gray-500 mb-2 uppercase tracking-wider">核心逻辑: 长尾搜索 + 广告分润</div>
+                    <p class="text-sm text-gray-400">
+                        不仅是AdSense，更是品牌信任背书的搜索引擎。Shorts 是目前新的流量红利入口。
+                        <br><br>
+                        <span class="text-primary font-semibold">我的打法：</span>用 Shorts 做爆发引流，长视频做深度种草与品牌沉淀，建立高粘性粉丝群。
+                    </p>
+                </div>
+
+                <!-- Instagram -->
+                <div class="bg-card p-6 rounded-xl border border-gray-800 hover:border-gray-600 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fab fa-instagram text-2xl text-pink-500"></i>
+                        <h4 class="font-bold text-white">Instagram</h4>
+                    </div>
+                    <div class="text-xs text-gray-500 mb-2 uppercase tracking-wider">核心逻辑: 视觉审美 + 品牌溢价</div>
+                    <p class="text-sm text-gray-400">
+                        品牌调性的橱窗。盈利依赖于高客单价的品牌合作与主页外链导流。
+                        <br><br>
+                        <span class="text-primary font-semibold">我的打法：</span>提升视觉统一性，打造"向往感"生活方式，提升品牌溢价。
+                    </p>
+                </div>
+
+                <!-- X (Twitter) -->
+                <div class="bg-card p-6 rounded-xl border border-gray-800 hover:border-gray-600 transition-all">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fab fa-twitter text-2xl text-white"></i>
+                        <h4 class="font-bold text-white">X (Twitter)</h4>
+                    </div>
+                    <div class="text-xs text-gray-500 mb-2 uppercase tracking-wider">核心逻辑: 实时舆论 + 客服公关</div>
+                    <p class="text-sm text-gray-400">
+                        信息流转最快的地方，适合做话题引爆、Crypto/Web3 营销及即时客户服务。
+                        <br><br>
+                        <span class="text-primary font-semibold">我的打法：</span>实时监控关键词并及时回复，维持品牌活跃度。
+                    </p>
+                </div>
+
+                <!-- Facebook -->
+                <div class="bg-card p-6 rounded-xl border border-gray-800 hover:border-gray-600 transition-all md:col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fab fa-facebook text-2xl text-blue-600"></i>
+                        <h4 class="font-bold text-white">Facebook</h4>
+                    </div>
+                    <div class="text-xs text-gray-500 mb-2 uppercase tracking-wider">核心逻辑: 社群私域 + 高消费力人群</div>
+                    <p class="text-sm text-gray-400">
+                        尽管年轻用户流失，但 Groups 是沉淀高净值私域流量的最佳场所。广告投放系统（Ads Manager）依然是ROI最精准的工具。
+                        <br><br>
+                        <span class="text-primary font-semibold">我的打法：</span>结合 Case 1 的私域经验，通过社群运营建立品牌社区，利用精准投流收割 30+ 高购买力人群。
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Part 2: My Fit (人岗匹配) -->
+            <div class="bg-gradient-to-r from-blue-900/40 to-purple-900/40 rounded-2xl p-8 md:p-12 border border-blue-500/30 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-bold text-white mb-6">Why Me? 我与海外社媒岗位的适配性</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400 mb-4 text-xl">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">AI思维</h4>
+                            <p class="text-sm text-gray-300">
+                                我不抗拒技术，我驾驭技术。我能用 AI 抹平语言文化的鸿沟，让中国品牌讲出地道的全球故事。
+                            </p>
+                        </div>
+                        <div>
+                            <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center text-green-400 mb-4 text-xl">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">结果导向 (Result-Driven)</h4>
+                            <p class="text-sm text-gray-300">
+                                作品集里没有"自嗨"的艺术品，只有经过数据验证的"转化武器"。我知道流量终究要服务于 GMV。
+                            </p>
+                        </div>
+                        <div>
+                            <div class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center text-purple-400 mb-4 text-xl">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h4 class="font-bold text-white mb-2">全链路闭环能力</h4>
+                            <p class="text-sm text-gray-300">
+                                从脚本策划、拍摄剪辑到数据复盘，我一个人就是一个微型团队。我能以最低的成本快速测试市场反馈。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Resume / Experience Timeline -->
+    <section id="resume" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">职业旅程 & 教育背景</h2>
+            <p class="text-gray-400">持续精进的每一步</p>
+        </div>
+        
+        <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-700 before:to-transparent">
+            
+            <!-- Job 1: 南湾壹号 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 bg-card shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                    <i class="fas fa-briefcase text-primary text-sm"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-6 rounded-xl border border-gray-800 shadow-md hover:border-primary/50 transition-colors">
+                    <div class="flex items-center justify-between space-x-2 mb-2">
+                        <div class="font-bold text-white text-lg">南湾壹号（深圳）科技有限公司</div>
+                        <time class="font-caveat font-medium text-primary text-xs whitespace-nowrap">2025.07 - 2025.12</time>
+                    </div>
+                    <div class="text-sm font-semibold text-secondary mb-3">市场营销 /</div>
+                    <ul class="text-gray-400 text-sm list-disc list-inside space-y-1">
+                        <li><strong>视频全案：</strong> 独立制作 50+ 条营销视频，累计浏览 13w+，打通内容生产SOP。</li>
+                        <li><strong>电商运营：</strong> 优化主图与详情页，推动店铺转化率提升至 7% (行业均值以上)。</li>
+                        <li><strong>AI落地：</strong> 引入即梦、nanobanana等AI工具辅助素材生成，大幅降低拍摄成本。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 2: 个人项目 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 bg-card shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                    <i class="fas fa-rocket text-purple-500 text-sm"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-6 rounded-xl border border-gray-800 shadow-md hover:border-purple-500/50 transition-colors">
+                    <div class="flex items-center justify-between space-x-2 mb-2">
+                        <div class="font-bold text-white text-lg">个人自媒体 IP (Side Project)</div>
+                        <time class="font-caveat font-medium text-gray-400 text-xs whitespace-nowrap">2024.06 - 至今</time>
+                    </div>
+                    <div class="text-sm font-semibold text-purple-400 mb-3">内容主理人 | 小红书 </div>
+                    <ul class="text-gray-400 text-sm list-disc list-inside space-y-1">
+                        <li><strong>0-1起号：</strong> 聚焦本地生活赛道，单篇笔记最高涨粉 300+，总浏览 20w+。</li>
+                        <li><strong>商业闭环：</strong> 策划民宿推广项目，通过内容引流实现线下营收增长 48%。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 3: 成都优录取 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 bg-card shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                    <i class="fas fa-user-clock text-gray-400 text-sm"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-6 rounded-xl border border-gray-800 shadow-md hover:border-gray-700 transition-colors">
+                    <div class="flex items-center justify-between space-x-2 mb-2">
+                        <div class="font-bold text-white">成都优录取科技有限公司</div>
+                        <time class="font-caveat font-medium text-gray-500 text-xs whitespace-nowrap">2024.09 - 2025.03</time>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-300 mb-3">新媒体运营实习生</div>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        独立运营 2 个小红书账号，负责用户咨询与私域维护。通过热点内容策划提升互动率，积累了扎实的内容流量运营与用户转化经验。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Job 4: 广州鱼禾 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 bg-card shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                    <i class="fas fa-video text-gray-400 text-sm"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-6 rounded-xl border border-gray-800 shadow-md hover:border-gray-700 transition-colors">
+                    <div class="flex items-center justify-between space-x-2 mb-2">
+                        <div class="font-bold text-white">广州鱼禾科技有限责任公司</div>
+                        <time class="font-caveat font-medium text-gray-500 text-xs whitespace-nowrap">2023.12 - 2024.02</time>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-300 mb-3">AI课程编导实习生</div>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        主导抖音 AI 课程内容搭建，制作讲解视频。实现单平台涨粉 1w+，验证了技术类内容在短视频平台的增长潜力。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Job 5: 杭州得闻天下 -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 bg-card shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                    <i class="fas fa-bullhorn text-gray-400 text-sm"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-6 rounded-xl border border-gray-800 shadow-md hover:border-gray-700 transition-colors">
+                    <div class="flex items-center justify-between space-x-2 mb-2">
+                        <div class="font-bold text-white">杭州得闻天下科技有限公司</div>
+                        <time class="font-caveat font-medium text-gray-500 text-xs whitespace-nowrap">2022.07 - 2022.08</time>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-300 mb-3">品牌推广实习生</div>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        负责公众号与社群的文案撰写及海报设计。协助执行营销活动并整理数据报告，培养了早期的数据复盘意识与品牌执行力。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-gray-700 bg-card shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                    <i class="fas fa-graduation-cap text-white text-sm"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-6 rounded-xl border border-gray-800 shadow-md hover:border-white/20 transition-colors">
+                    <div class="flex items-center justify-between space-x-2 mb-2">
+                        <div class="font-bold text-white text-lg">四川传媒学院</div>
+                        <time class="font-caveat font-medium text-white text-xs whitespace-nowrap">2021 - 2025</time>
+                    </div>
+                    <div class="text-sm font-semibold text-gray-300 mb-3">本科 | 影视摄影与制作</div>
+                    <div class="space-y-3">
+                        <div>
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-1">语言能力</span>
+                            <span class="inline-block bg-primary/20 text-primary text-xs px-2 py-1 rounded">英语 CET-6 (流利沟通)</span>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-1">核心课程/技能</span>
+                            <p class="text-gray-400 text-xs">
+                                视听语言、数字媒体艺术、非线性编辑、导演基础。<br>
+                                熟练掌握 Pr / Ae / Ps / CapCut 及主流 AI 生成工具。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-white mb-8">Ready to create the next viral hit?</h2>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+                <div class="flex items-center gap-2 text-gray-300">
+                    <i class="fas fa-envelope text-primary"></i>
+                    <span>2645520659@qq.com</span>
+                </div>
+                <div class="flex items-center gap-2 text-gray-300">
+                    <i class="fas fa-phone text-primary"></i>
+                    <span>+86 159 2359 0272</span>             
+                </div>
+            </div>
+
+            <div class="text-gray-600 text-sm">
+                &copy; 2025 [Your Name]. All rights reserved. <br>
+                Built with <i class="fas fa-heart text-red-500 mx-1"></i> & AI Workflow.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
